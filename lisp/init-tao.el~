@@ -1,0 +1,2 @@
+(load-theme 'tao t)
+(provide 'init-tao)

@@ -1,0 +1,11 @@
+(require 'auto-virtualenv
+  (add-hook 'python-mode-hook 'auto-virtualenv-set-virtualenv))
+
+(require 'elpy
+ 
+  (setq elpy-rpc-backend "jedi")
+  (elpy-enable)
+  (add-hook 'python-mode-hook 'elpy-mode))
+
+(provide 'init-elpy)
+
